@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fontawesome-free-6.3.0-web/css/all.css">
+    <style>
+        /* * {
+            border: 1px solid red;
+        } */
+    </style>
+</head>
+
+<bod style="background-color: #8d8d8d">
+    <div class="container">
+        <div class="row">
+            <div class="col d-flex justify-content-center">
+                <br>
+
+                <div class="calculadora">
+                    <input type="text" placeholder="0" id="msg" class="form-control resultado" disabled>
+
+                    <div class="row mt-3">
+                        <button type="button" onclick="calcular('acao','c')" class="btn btn-success clear btn-lg">C</button>
+                        <button type="button" onclick="calcular('acao','/')" class="btn btn-success btn-lg">/</button>
+                        <button type="button" onclick="calcular('acao','*')" class="btn btn-success btn-lg">X</button>
+                    </div>
+                    <div class="row">
+                        <button type="button" onclick="calcular('valor',7)" class="btn btn-success btn-lg">7</button>
+                        <button type="button" onclick="calcular('valor',8)" class="btn btn-success btn-lg">8</button>
+                        <button type="button" onclick="calcular('valor',9)" class="btn btn-success btn-lg">9</button>
+                        <button type="button" onclick="calcular('acao','-')" class="btn btn-success btn-lg">-</button>
+                    </div>
+                    <div class="row">
+                        <button type="button" onclick="calcular('valor',4)" class="btn btn-success btn-lg">4</button>
+                        <button type="button" onclick="calcular('valor',5)" class="btn btn-success btn-lg">5</button>
+                        <button type="button" onclick="calcular('valor',6)" class="btn btn-success btn-lg">6</button>
+                        <button type="button" onclick="calcular('acao','+')" class="btn btn-success btn-lg">+</button>
+                    </div>
+                    <div class="row">
+                        <button type="button" onclick="calcular('valor',1)" class="btn btn-success btn-lg">1</button>
+                        <button type="button" onclick="calcular('valor',2)" class="btn btn-success btn-lg">2</button>
+                        <button type="button" onclick="calcular('valor',3)" class="btn btn-success btn-lg">3</button>
+                        <button type="button" onclick="calcular('acao','=')" class="btn enter btn-success btn-lg">=</button>
+                    </div>
+                    <div class="row" style="margin-top: -60px;">   
+                        <button onclick="calcular('valor',0)" type="button" class="btn zero btn-success btn-lg">0</button>
+                        <button onclick="calcular('acao',',')" type="button" class="btn btn-success btn-lg">,</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</bod>
+
+
+</html>
